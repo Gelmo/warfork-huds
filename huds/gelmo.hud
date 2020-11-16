@@ -1,0 +1,86 @@
+/*
+Credz:
+ - Warsow Team
+ - Scratch
+ - joki
+ - kuhjoe
+ - Jihnsius 4EXTREME BRA1NZ
+ - IRC for <3 and feedback
+ - clownFart for most of the work
+ - SiPlus for the touchscreen version
+ - nasa
+ - adem
+*/
+
+setFontFamily con_fontSystem
+setFontSize con_fontSystemSmall
+
+setScale #DEFAULTSCALE
+if %MATCH_STATE < #MATCH_STATE_POSTMATCH
+include zoom
+include damage_indicator_screen
+include crosshair
+include damage_numbers
+
+if %TUTORIAL == 0
+include gelmo/clock
+endif
+
+if %RACE == 0
+include gelmo/health_armor
+include gelmo/weaponlist
+include gelmo/ammo
+
+if %TUTORIAL == 0
+
+include gelmo/scores
+include gelmo/scores_individual
+
+endif //if %TUTORIAL == 0
+
+include ammo_warning
+include gelmo/stunned
+include gelmo/obituaries
+include gelmo/powerups
+include gelmo/picked_up_item
+
+if %TUTORIAL == 0
+
+include gelmo/team_info
+include gelmo/team_image
+include gelmo/team_message
+include gelmo/team_progress
+include gelmo/item_timers
+include minimap
+
+endif //if %TUTORIAL == 0
+
+endif //if %RACE == 0
+
+include gelmo/chasing
+
+/* Race */
+include gelmo/race_records
+
+include strafe
+include gelmo/speed
+include gelmo/fps
+include help_message
+include download
+include gelmo/net
+include gelmo/pointing
+include keystate
+include weaponcross
+endif //if %MATCH_STATE < #MATCH_STATE_POSTMATCH
+
+include awards
+include chat
+
+//adds transparent dark background if scoreboard is shown
+if %SCOREBOARD == 1
+setCursor 0 0
+setAlign 0 0
+setSize 800 600
+setColor 0 0 0 0.3
+drawPicByName *whiteImage
+endif
