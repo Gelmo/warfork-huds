@@ -1,4 +1,3 @@
-if %TEAM != #TEAM_SPECTATOR
 if %INSTAGIB == 0
 //background
 setCursor #WIDTH / 2, #HEIGHT - 5
