@@ -1,0 +1,412 @@
+if %STUNNED
+
+//vid_mode 24	
+	if %VIDHEIGHT == 1080
+	if %VIDWIDTH == 1920
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 160, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 44
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+//vid_mode 23
+	if %VIDHEIGHT == 1050
+	if %VIDWIDTH == 1680
+	setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 170, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 44
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 22
+	if %VIDHEIGHT == 900
+	if %VIDWIDTH == 1600
+	setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 175, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 44
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 21
+	if %VIDHEIGHT == 900
+	if %VIDWIDTH == 1440
+	setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 195, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 44
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 20
+	if %VIDHEIGHT == 768
+	if %VIDWIDTH == 1366
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 195, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 40
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+//vid_mode 19
+	if %VIDHEIGHT == 768
+	if %VIDWIDTH == 1360
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 180, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 38
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 18
+	if %VIDHEIGHT == 800
+	if %VIDWIDTH == 1280
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 190, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 40
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+ //vid_mode 17
+	if %VIDHEIGHT == 800
+	if %VIDWIDTH == 1200
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 200, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 40
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 16
+	if %VIDHEIGHT == 720
+	if %VIDWIDTH == 1280
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 170, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 34
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+	
+//vid_mode 15 --netbook
+	if %VIDHEIGHT == 600
+	if %VIDWIDTH == 1024
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 190, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 32
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 14 --netbook
+	if %VIDHEIGHT == 576
+	if %VIDWIDTH == 1024
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 185, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 32
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 13 
+	if %VIDHEIGHT == 480
+	if %VIDWIDTH == 856
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 175, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 24
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+	//vid_mode 12
+	if %VIDHEIGHT == 480
+	if %VIDWIDTH == 800
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 185, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 24
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+////////////////////////////////////////////4:3///////////////////////////////////////////////
+
+//vid_mode 9
+	if %VIDHEIGHT == 1024
+	if %VIDWIDTH == 1280
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 200, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 44
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 8
+	if %VIDHEIGHT == 960
+	if %VIDWIDTH == 1280
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 205, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 44
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 7
+	if %VIDHEIGHT == 864
+	if %VIDWIDTH == 1152
+		setFontSize 40
+	endif
+	endif
+	
+//vid_mode 6
+	if %VIDHEIGHT == 768
+	if %VIDWIDTH == 1024
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 200, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 34
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+//vid_mode 5
+	if %VIDHEIGHT == 720
+	if %VIDWIDTH == 960
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 190, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 30
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+//vid_mode 4
+	if %VIDHEIGHT == 600
+	if %VIDWIDTH == 800
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 200, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 28
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+
+//vid_mode 3
+	if %VIDHEIGHT == 480
+	if %VIDWIDTH == 640
+		setFontFamily "SF Comic Script"
+		setColor 1 1 1 1
+		setAlign 3 1
+		setSize 75 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 75
+		setCursor #WIDTH - 225, #HEIGHT / 15.15
+		drawPicByName "gfx\taz\stunned_taz"
+		setFontSize 24
+		moveCursor 5, 15
+		setAlign 1 1
+		setColor 0 0 0 1
+		drawString "STUNNED!!"
+		
+		moveCursor 1.4, 0
+		setColor 1 0 0 1
+		drawString "STUNNED!!"
+	endif
+	endif
+	
+endif

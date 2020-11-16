@@ -1,0 +1,729 @@
+if %SHOW_PICKUP
+if %PICKUP_ITEM	
+	setFontSize 10
+		if %VIDHEIGHT >= 600
+		setFontSize 12
+			if %VIDHEIGHT >= 720
+			setFontSize 18
+				if %VIDHEIGHT >= 768
+				setFontSize 17
+					if %VIDHEIGHT >= 800
+					setFontSize 18
+						if %VIDHEIGHT >= 900
+						setFontSize 20
+							if %VIDHEIGHT >= 960
+							setFontSize 22
+								if %VIDHEIGHT >= 1024
+								setFontSize 24
+									if %VIDHEIGHT >= 1050
+									setFontSize 26
+										if %VIDHEIGHT == 1080
+										setFontSize 28
+											if %VIDHEIGHT >= 1200
+											setFontSize 32
+												if %VIDHEIGHT >= 1600
+												setFontSize 36
+												endif
+											endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+//Armor
+	
+//Green Armor
+
+	if %PICKUP_ITEM == #ITEM_GREEN_ARMOR
+		
+		setAlign #CENTER, #TOP
+		setCursor 0 + #WIDTH / 2, 475.5
+		
+		setColor 1 1 1 0.6
+		setSize 65 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 65
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\GA"
+		moveCursor -25, 25
+		
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		setColor 1 1 1 1
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5.5, 0
+		setColor 0.3 0.9 0.3 1 //green
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+		
+	endif
+	
+//Yellow Armor
+
+	if %PICKUP_ITEM == #ITEM_YELLOW_ARMOR
+
+		
+		setAlign #CENTER, #TOP
+		setCursor 0 + #WIDTH / 2, 475.5
+		
+		setColor 1 1 1 0.6 
+		setSize 65 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 65
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\YA"
+		moveCursor -25, 25
+		
+		
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		setColor 1 1 1 1
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5.5, 0
+		setColor 1 1 0.3 1 //yellow
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+		
+	endif
+	
+//Red Armor
+
+	if %PICKUP_ITEM == #ITEM_RED_ARMOR
+		
+		setAlign #CENTER, #TOP
+		setCursor 0 + #WIDTH / 2, 475.5
+		
+		setColor 1 1 1 0.6 
+		setSize 65 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 65
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\RA"
+		moveCursor -20, 25
+		
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		setColor 1 1 1 1
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -7, 0
+		setColor 1 0.1 0.1 1 //red
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+		
+	endif
+	
+// Mega Health
+	
+	if %PICKUP_ITEM == #ITEM_MEGA_HEALTH
+	
+		setAlign #CENTER, #TOP
+		setCursor 0 + #WIDTH / 2, 475.5
+		
+		setColor 1 1 1 0.7
+		setSize 65 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 65
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\100"
+		moveCursor -25, 25
+		
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		setColor 1 1 1 1
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -7.5, 0
+		setColor 1 0.5 1 1 //pink
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+// Ultra Health
+
+	if %PICKUP_ITEM == #ITEM_ULTRA_HEALTH
+		
+		setAlign #CENTER, #TOP
+		setCursor 0 + #WIDTH / 2, 475.5
+		
+		setColor 1 1 1 0.7 
+		setSize 65 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 65
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\ultra"
+		moveCursor -25, 25
+		
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		setColor 1 1 1 1
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -7.5, 0
+		setColor 0.0 1 1 0.8 //blue
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//Items
+	
+	if %PICKUP_ITEM == ITEM_REGENERATION
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		
+		setAlign #RIGHT #TOP
+		setCursor 441 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 0.9 0.2 0.2 1 // red
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+	
+	if %PICKUP_ITEM == #ITEM_ARMOR_SHARD
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 441 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 0.3 0.9 0.3 1 // green
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//Healths
+
+	if %PICKUP_ITEM == #ITEM_5_HEALTH
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 441 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 0.3 0.9 0.3 1 // green
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_25_HEALTH
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 441 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor  1 0.9 0 1 //yellow
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_50_HEALTH
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 441 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 0.5 0 1 // orange
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//POWER UPS
+
+//Quad Damage
+	if %PICKUP_ITEM == #ITEM_QUAD_DAMAGE
+	
+		setAlign #CENTER, #TOP
+		setCursor 0 + #WIDTH / 2, 475.5
+		
+		setColor 1 1 1 0.9
+		setSize 65 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 65
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\quad"
+		moveCursor -25, 25
+		
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		setColor 1 1 1 1
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5.5, 0
+		setColor 1 0.5 0 1 //orange
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//SHIELD
+	if %PICKUP_ITEM == #ITEM_WARSHELL
+	
+		setAlign #CENTER, #TOP
+		setCursor 0 + #WIDTH / 2, 475.5
+		
+		setColor 1 1 1 0.9
+		setSize 65 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 65
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\warshell"
+		moveCursor -25, 25
+		
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		setColor 1 1 1 1
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5.5, 0
+		setColor 0.2 1 1 1 //light blue
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//Weapons
+	
+//Lasergun
+	
+	if %PICKUP_ITEM == #ITEM_LASERGUN
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+	
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 19
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\LG"
+		setColor 1 1 1 1 
+		moveCursor -10, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_LASERS
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 19
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\LG"
+		setColor 1 1 1 1 
+		moveCursor 0, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//Rocket Launcher
+
+	if %PICKUP_ITEM == #ITEM_ROCKET_LAUNCHER
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+	
+		setColor 1 1 1 1 
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\RL"
+		moveCursor -30, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_ROCKETS
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1 
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\RL"
+		moveCursor -5, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+
+//Plasmagun
+
+	if %PICKUP_ITEM == #ITEM_PLASMAGUN
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1 
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 19
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\PG"
+		moveCursor -12, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_PLASMA
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\PG"
+		moveCursor -5, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//Shotgun - Riotgun
+
+	if %PICKUP_ITEM == #ITEM_RIOTGUN
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+		
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 19
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\RG"
+		moveCursor -5, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_SHELLS
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\RG"
+		moveCursor 2.5, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//Electrobolt
+
+	if %PICKUP_ITEM == #ITEM_ELECTROBOLT
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\EB"
+		moveCursor -10, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_BOLTS
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\EB"
+		moveCursor 5, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+//Machinegun
+
+	if %PICKUP_ITEM == #ITEM_MACHINEGUN
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 19
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\MG"
+		moveCursor -15, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_BULLETS
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\MG"
+		moveCursor 0, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+
+//Grenade Launcher
+
+	if %PICKUP_ITEM == #ITEM_GRENADE_LAUNCHER
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1 
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 19
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\GL"
+		moveCursor -32.5, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	if %PICKUP_ITEM == #ITEM_GRENADES
+	
+		setFontFamily "Hemi Head"
+		setFontStyle "Bold"
+	
+		setAlign #RIGHT #TOP
+		setCursor 460 + #WIDTH / 4, 570
+		moveCursor 0, 0
+		setAlign #RIGHT, #TOP
+		
+		setColor 1 1 1 1
+		setSize 220 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 17
+		setAlign #CENTER, #TOP
+		drawPicByName "gfx\taz\GL"
+		moveCursor -10, 0
+		
+		setAlign #LEFT, #TOP
+		moveCursor -1, -1
+		drawItemName %PICKUP_ITEM
+		moveCursor -5, 0
+		setAlign #RIGHT, #TOP
+		drawClock
+		setFontStyle Normal
+		
+	endif
+	
+	
+	
+endif
+endif	

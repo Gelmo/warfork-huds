@@ -1,0 +1,28 @@
+//supports widescreen resolutions **by Adem**
+//cg_showPressedkeys 1
+
+SetCursor #WIDTH - 175 * 1.3333 * %VIDHEIGHT / %VIDWIDTH,480
+setAlign #CENTER, #BOTTOM
+setSize 32 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 32
+drawKeyState backward
+
+moveCursor 0, -33
+drawKeyState forward
+
+moveCursor -33 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 0
+drawKeyState jump
+
+moveCursor 0 33
+drawKeyState left
+
+moveCursor 0 33
+drawKeyState crouch
+
+moveCursor 66 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 0
+drawKeyState fire
+
+moveCursor 0 -33
+drawKeyState right
+
+moveCursor 0 -33
+drawKeyState special

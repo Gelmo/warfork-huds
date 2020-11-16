@@ -1,0 +1,12 @@
+setAlign 3 1
+setCursor #WIDTH - 5, 15
+setSize 300 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 25
+setFontFamily "Hemi Head"
+setFontSize 10
+if %VIDWIDTH >= 720
+	setFontSize 18
+	if %VIDWIDTH > 1280
+		setFontSize 22
+	endif
+endif
+drawObituaries 6 14 // aligned to right, iconsize 15

@@ -1,0 +1,49 @@
+if %TEAM_ALPHA_SCORE != #NOTSET
+if %TEAM_BETA_SCORE != #NOTSET
+if %INDIVIDUAL != 1
+	setAlign 3 1
+	setCursor #WIDTH / 2, 5
+	moveCursor -128 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 0
+	setSize 28 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 28
+	setColorToTeamColor %TEAM
+	if %TEAM == #TEAM_ALPHA
+		drawNum %TEAM_ALPHA_SCORE
+	endif
+	if %TEAM == #TEAM_BETA
+		drawNum %TEAM_BETA_SCORE
+	endif
+	setAlign 1 1
+	moveCursor 256 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 0
+	setColorToTeamColor %TEAM_ENEMY
+	if %TEAM == #TEAM_ALPHA
+		drawNum %TEAM_BETA_SCORE
+	endif
+	if %TEAM == #TEAM_BETA
+		drawNum %TEAM_ALPHA_SCORE
+	endif
+
+	moveCursor -128 * 1.3333333333 * %VIDHEIGHT / %VIDWIDTH, 0
+	setAlign 2 1
+if %TEAM == #TEAM_ALPHA
+		if %TEAM_ALPHA_SCORE > %TEAM_BETA_SCORE
+			setColorToTeamColor %TEAM
+		endif
+		if %TEAM_ALPHA_SCORE < %TEAM_BETA_SCORE
+			setColorToTeamColor %TEAM_ENEMY
+		endif
+	endif
+	if %TEAM == #TEAM_BETA
+		if %TEAM_ALPHA_SCORE < %TEAM_BETA_SCORE
+			setColorToTeamColor %TEAM
+		endif
+		if %TEAM_ALPHA_SCORE > %TEAM_BETA_SCORE
+			setColorToTeamColor %TEAM_ENEMY	
+		endif
+	endif
+	if %TEAM_ALPHA_SCORE == %TEAM_BETA_SCORE
+		setColor 1 1 0.6 1
+	endif
+
+endif //if %INDIVIDUAL != 1
+endif //if %TEAM_BETA_SCORE != #NOTSET
+endif //if %TEAM_ALPHA_SCORE != #NOTSET

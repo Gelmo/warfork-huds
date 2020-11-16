@@ -1,0 +1,161 @@
+if %MATCH_STATE == #MATCH_STATE_WARMUP
+	if %VIDHEIGHT >= 1080
+		setFontSize 65
+		setColor 0.8 0.8 0.8 0.5
+	endif
+	if %VIDHEIGHT == 1050
+		setFontSize 65
+		setColor 0.8 0.8 0.8 0.5
+	endif
+	if %VIDHEIGHT <= 768
+		setFontSize 45
+		setColor 0.8 0.8 0.8 0.5
+	endif
+	if %VIDHEIGHT <= 720
+		setFontSize 45
+		setColor 0.8 0.8 0.8 0.5
+	endif
+	if %VIDHEIGHT <= 600
+		setFontSize 30
+		setColor 1 1 1 0.5
+	endif
+setalign #LEFT, #BOTTOM
+setcursor 1, 600
+setFontFamily "Hemi Head"
+drawString "Warmup"
+endif
+
+setAlign 5 5
+setFontFamily "Unsteady Oversteer"
+setFontSize 70
+if %VIDHEIGHT <= 1024
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 45
+if %VIDHEIGHT <= 600
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 34
+if %VIDHEIGHT <= 480
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 30
+endif
+endif
+endif
+
+setCursor 400, -4.5
+
+if %TEAM == #TEAM_SPECTATOR
+	setAlign 5 5
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 70
+if %VIDHEIGHT <= 1024
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 45
+if %VIDHEIGHT <= 600
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 34
+if %VIDHEIGHT <= 480
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 30
+endif
+endif
+endif
+endif
+
+
+
+if %HEALTH > 100
+	setColor 1 0 1 1 
+endif
+
+//Color Shadow Clock
+setColor 0 0 0 1
+drawClock
+
+//Color Clock
+setColor 1 1 1 1
+
+//clock picked up
+
+if %SHOW_PICKUP > 0
+
+//Armor
+	if %PICKUP_ITEM == #ITEM_RED_ARMOR
+		setColor 1 0.1 0.1 1 // red
+	endif
+	if %PICKUP_ITEM == #ITEM_YELLOW_ARMOR
+		setColor 1 1 0.3 1 // yellow
+	endif
+	if %PICKUP_ITEM == #ITEM_GREEN_ARMOR
+		setColor 0.3 0.9 0.3 1 // green
+	endif
+	
+//Health
+	if %PICKUP_ITEM == #ITEM_MEGA_HEALTH
+		setColor 1 0.3 1 1 // magenta
+	endif
+	if %PICKUP_ITEM == #ITEM_ULTRA_HEALTH
+		setColor 0.2 0.4 1.0 1 // blue
+	endif
+	
+//Power ups
+	if %PICKUP_ITEM == #ITEM_QUAD_DAMAGE
+		setColor 1 0.5 0 1 // orange
+	endif
+	if %PICKUP_ITEM == #ITEM_WARSHELL
+		setColor 0.2 1 1 1 // lightblue
+	endif
+
+//Regeneration
+	if %PICKUP_ITEM == #ITEM_REGENERATION
+		setColor 0.9 0.2 0.2 1 // red
+	endif
+endif
+
+//Clock
+moveCursor 2, 0
+drawClock
+
+if %TEAM == #TEAM_SPECTATOR
+	moveCursor 0, 35
+endif
+
+/* MATCH STATES */
+setFontFamily "Unsteady Oversteer"
+setFontSize 45
+if %VIDHEIGHT <= 1024
+	setFontFamily "Unsteady Oversteer"
+	setFontSize 45
+	if %VIDHEIGHT < 720
+		setFontFamily "Unsteady Oversteer"
+		setFontSize 40
+		if %VIDHEIGHT < 600
+			setFontFamily "Unsteady Oversteer"
+			setFontSize 34
+		endif
+	endif
+endif
+
+if %INDIVIDUAL
+	// Countdown
+	if %MATCH_STATE == #MATCH_STATE_COUNTDOWN
+		moveCursor -40, 350
+		setColor 1 1 1 1
+		
+	endif
+	// Fast-fading Fight!
+	if %MATCH_STATE == #MATCH_STATE_PLAYTIME
+		if 500 > %MATCH_DURATION 
+			setCursor 0.5 * #WIDTH, 380
+			setColor 1 0 0 1
+			setColorAlpha 1 - 0.002 * %MATCH_DURATION 
+			
+			if %OVERTIME == 1
+				drawString "O..OV.. OVERTIME!!"
+			endif
+			moveCursor 0, 20
+		endif
+	endif
+	
+
+
+endif //if %INDIVIDUAL

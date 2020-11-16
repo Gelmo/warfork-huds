@@ -1,0 +1,9 @@
+if %INDIVIDUAL == 0
+
+setCursor 3, 750
+setFontFamily "Hemi Head"
+setColor 1, 1, 1, 1
+setAlign #CENTER, #TOP
+drawAwards
+
+endif

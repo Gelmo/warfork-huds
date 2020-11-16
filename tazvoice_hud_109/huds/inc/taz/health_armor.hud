@@ -1,0 +1,188 @@
+if %HEALTH != #NOTSET
+setFontFamily "Unsteady Oversteer"
+
+//DEATH MESSAGE
+	if %HEALTH <= 0
+	if %ARMOR >= 0
+	
+	setFontSize 30
+		if %VIDHEIGHT >= 600
+		setFontSize 30
+			if %VIDHEIGHT >= 720
+			setFontSize 60
+				if %VIDHEIGHT >= 768
+				setFontSize 60
+					if %VIDHEIGHT >= 800
+					setFontSize 60
+						if %VIDHEIGHT >= 900
+						setFontSize 65
+							if %VIDHEIGHT >= 960
+							setFontSize 70
+								if %VIDHEIGHT >= 1024
+								setFontSize 75
+									if %VIDHEIGHT >= 1050
+									setFontSize 85
+										if %VIDHEIGHT == 1080
+										setFontSize 90
+											if %VIDHEIGHT >= 1200
+											setFontSize 90
+												if %VIDHEIGHT >= 1600
+												setFontSize 100
+												endif
+											endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	
+		
+		setAlign 2 2
+		
+		setColor 0 0 0 1
+		setCursor #WIDTH / 2.01, 110
+		setFontFamily "Avenger"
+		drawString "WOOPS!!"
+		
+		setColor 1 0 0 1
+		setCursor #WIDTH / 2, 110
+		setFontFamily "Avenger"
+		drawString "WOOPS!!"
+		
+		
+	setFontSize 20
+		if %VIDHEIGHT >= 600
+		setFontSize 20
+			if %VIDHEIGHT >= 720
+			setFontSize 25
+				if %VIDHEIGHT >= 768
+				setFontSize 25
+					if %VIDHEIGHT >= 800
+					setFontSize 30
+						if %VIDHEIGHT >= 900
+						setFontSize 30
+							if %VIDHEIGHT >= 960
+							setFontSize 35
+								if %VIDHEIGHT >= 1024
+								setFontSize 38
+									if %VIDHEIGHT >= 1050
+									setFontSize 40
+										if %VIDHEIGHT == 1080
+										setFontSize 45
+											if %VIDHEIGHT >= 1200
+											setFontSize 50
+												if %VIDHEIGHT >= 1600
+												setFontSize 60
+												endif
+											endif
+										endif
+									endif
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		
+		setColor 0 0 0 1
+		setCursor #WIDTH / 2.01, 540
+		drawString "Dead"
+		
+		setColor 1 0 0 1
+		setCursor #WIDTH / 2, 540
+		drawString "Dead"
+		
+	endif
+	endif
+	
+// draw health number
+	setAlign 3 2
+	setcursor 370, 580
+	setsize 30 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 30
+
+	if %HEALTH > 100
+		setcolor 1, 0, 1, 1
+	endif
+	if %HEALTH == 100
+		setcolor 1, 1, 1, 1
+	endif
+	if %HEALTH <= 99
+		setcolor 1, 1, 0, 1
+	endif
+	if %HEALTH < 76
+		setcolor 1, 0.3, 0, 1
+	endif
+	if %HEALTH < 51
+		setcolor 1, 0, 0, 1
+	endif
+	
+	// No Armor
+	if %HEALTH >= 1
+	if %ARMOR == 0
+		setAlign 2 2
+		setCursor 400 580
+		setSize 32 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 32
+	endif
+	endif
+	
+	if %HEALTH <= 0
+	if %ARMOR == 0
+		setAlign 2 2
+		setCursor 400 580
+		setSize 32 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 32
+	endif
+	endif
+	
+	drawnum %HEALTH
+
+endif
+
+
+	if %HEALTH != #NOTSET
+	if %ARMOR > 0
+
+// draw armor number
+	setAlign 1 2
+	setsize 30 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 30
+	setcursor 430, 580
+	if %ARMOR >= 125
+		setcolor 1, 0, 0, 1 //red
+	endif	
+	if %ARMOR < 125
+		setcolor 1, 1, 0, 1 //yellow
+	endif
+	if %ARMOR < 51
+		setcolor 0, 1, 0.3, 1 //green
+	endif
+	if %ARMOR < 25
+		setcolor 0.5, 0.5, 0.5 , 0.5 //grey
+	endif
+	drawnum %ARMOR
+	
+// draw icon
+	setAlign 2 2
+	setCursor 400 580
+	setSize 32 * 1.3333 * %VIDHEIGHT / %VIDWIDTH, 32
+	drawPicByName gfx/taz/armor
+	if %ARMOR >= 125
+		setcolor 1, 0, 0, 1 //red
+	endif	
+	if %ARMOR < 125
+		setcolor 1, 1, 0, 1 //yellow
+	endif
+	if %ARMOR < 51
+		setcolor 0, 1, 0.3, 1 //green
+	endif
+	if %ARMOR < 25
+		setcolor 0.5, 0.5, 0.5 , 0.5 //grey
+	endif
+	
+
+	
+endif
+endif
