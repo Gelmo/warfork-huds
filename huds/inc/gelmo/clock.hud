@@ -1,24 +1,33 @@
 setCursor #WIDTH / 2, 0
 
 // Top score/clock background
+setAlign 2 1
+setSize 395 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 40
+setColor 0 0 0 0.5
+setColorAlpha 0.5
 if %TEAM > 1 // if not #TEAM_PLAYER or #TEAM_SPECTATOR
-	setAlign 2 1
-	setSize 395 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 40
 	setColorToTeamColor %TEAM
 	setColorAlpha 0.25
-	drawPicByName "gfx/hud/default/top_bar"
 endif
+drawPicByName "gfx/hud/default/top_bar"
 
-/* Clock */
-setSpecialFontFamily "Virtue"
-setAlign 2 1 //can't be vertically aligned (bug or something)
-setFontSize %VIDHEIGHT / 20
-moveCursor 1 1
+//clock numbers
+moveCursor 0 0
+setFontFamily "Virtue"
+setFontSize %VIDHEIGHT / 18
+
+//pro outline
 setColor 0 0 0 1
 drawClock
-moveCursor -1 -1
+moveCursor 0, -1
+drawClock
+moveCursor 1, 0
+drawClock
+moveCursor 0, 1
+drawClock
+moveCursor -0.5, -0.5
+
 setColor 1 1 1 1
-// Change color momentarly if pickup
 if %SHOW_PICKUP > 0
 	if %PICKUP_ITEM == #ITEM_RED_ARMOR
 		setColor 1 0 0 1 // red
@@ -32,16 +41,21 @@ if %SHOW_PICKUP > 0
 	if %PICKUP_ITEM == #ITEM_MEGA_HEALTH
 		setColor 1 0 1 1 // magenta
 	endif
+	if %PICKUP_ITEM == #ITEM_ULTRA_HEALTH
+		setColor 0 0.5 1 1 // blue
+	endif
 	if %PICKUP_ITEM == #ITEM_QUAD_DAMAGE
 		setColor 1 0.5 0 1 // orange
 	endif
 	if %PICKUP_ITEM == #ITEM_WARSHELL
 		setColor 0 1 1 1 // cyan
 	endif
+	if %PICKUP_ITEM == #ITEM_REGENERATION
+		setColor 1 0 0 1 // red
+	endif
 endif
 drawClock
-setSize 120 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 40
-touchScores
+moveCursor +0.5, +0.5
 
 // MATCH STATES
 setFontFamily con_fontSystem
