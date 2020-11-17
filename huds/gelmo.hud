@@ -29,6 +29,10 @@ endif
 if %RACE == 0
 include gelmo/health_armor
 include gelmo/weaponlist
+include gelmo/stunned
+include gelmo/ammo_warning
+include gelmo/obituaries
+include gelmo/powerups
 
 if %TUTORIAL == 0
 
@@ -37,10 +41,10 @@ include gelmo/scores_individual
 
 endif //if %TUTORIAL == 0
 
-include gelmo/ammo_warning
-include gelmo/stunned
-include gelmo/obituaries
-include gelmo/powerups
+
+
+
+
 include gelmo/picked_up_item
 
 if %TUTORIAL == 0
