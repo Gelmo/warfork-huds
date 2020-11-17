@@ -1,7 +1,7 @@
 if %STUNNED
 setFontFamily "Hemi head"
 setFontStyle Bold
-setFontSize %VIDHEIGHT / 45
+setFontSize %VIDHEIGHT / 40
 setColor 1 1 1 1
 setAlign 3 3
 setCursor #WIDTH, #HEIGHT / 4
