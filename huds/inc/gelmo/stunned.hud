@@ -1,5 +1,5 @@
 if %STUNNED
-setFontFamily con_fontSystem
+setFontFamily "Hemi head"
 setFontStyle Bold
 setFontSize %VIDHEIGHT / 45
 setColor 1 1 1 1
