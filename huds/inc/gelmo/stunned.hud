@@ -1,5 +1,5 @@
 if %STUNNED
-setFontFamily "Hemi head"
+setFontFamily "Noto Sans"
 setFontSize %VIDHEIGHT / 40
 setColor 1 1 1 1
 setAlign 3 3
