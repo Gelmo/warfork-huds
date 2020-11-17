@@ -1,6 +1,5 @@
 if %STUNNED
 setFontFamily "Hemi head"
-setFontStyle Bold
 setFontSize %VIDHEIGHT / 40
 setColor 1 1 1 1
 setAlign 3 3
@@ -11,5 +10,4 @@ drawString "STUNNED"
 moveCursor -1, -1
 setColor 1 0 0 1
 drawString "STUNNED"
-setFontStyle Normal
 endif
