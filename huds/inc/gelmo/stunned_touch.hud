@@ -1,5 +1,5 @@
 if %STUNNED
-	setFontFamily "Noto Sans"
+	setFontFamily "Orbitron"
 	setFontStyle Bold
 	setFontSize %VIDHEIGHT / 50
 	setCursor #WIDTH / 2, #HEIGHT - 1
