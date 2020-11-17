@@ -29,6 +29,7 @@ endif
 if %RACE == 0
 include gelmo/health_armor
 include gelmo/weaponlist
+include gelmo/ammo
 include gelmo/stunned
 include gelmo/ammo_warning
 include gelmo/obituaries
