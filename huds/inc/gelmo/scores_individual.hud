@@ -2,8 +2,8 @@ if %SCORE != #NOTSET
 if %TEAMBASED == 0 //not team based GT
 	setAlign #RIGHT, #BOTTOM
 	setCursor #WIDTH - 64 * 1.333 * %VIDHEIGHT / %VIDWIDTH, #HEIGHT - 82
-	setFontFamily "Noto Sans"
-	setFontSize %VIDHEIGHT / 45
+	setFontFamily "Goldman"
+	setFontSize %VIDHEIGHT / 40
 
 	setColor 0 0 0 1
 	drawString "Points:"
@@ -18,6 +18,19 @@ if %TEAMBASED == 0 //not team based GT
 	setAlign #LEFT, #BOTTOM
 	setSize 20 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 20
 	moveCursor 2 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
-	drawNum %SCORE
+	moveCursor 0, 3
+	setFontFamily "Orbitron"
+    setFontSize %VIDHEIGHT / 30
+	setColor 0 0 0 1
+	drawStringNum %SCORE
+	moveCursor 0, -2
+	drawStringNum %SCORE
+	moveCursor 2, 0
+	drawStringNum %SCORE
+	moveCursor 0, 2
+	drawStringNum %SCORE
+	moveCursor -1, -1
+	setColor 1 1 1 1
+	drawStringNum %SCORE
 endif
 endif
