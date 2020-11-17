@@ -29,7 +29,6 @@ endif
 if %RACE == 0
 include gelmo/health_armor
 include gelmo/weaponlist
-include gelmo/ammo
 
 if %TUTORIAL == 0
 
