@@ -51,7 +51,7 @@ endif //if %RACE == 0
 
 include strafe
 include gelmo/chasing
-include gelmo/pointing
+include pointing
 include download
 include gelmo/net
 include gelmo/speed
