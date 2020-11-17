@@ -4,10 +4,13 @@ setCursor #WIDTH / 2, 0
 setAlign 2 1
 setSize 395 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 40
 setColor 0 0 0 0.5
-setColorAlpha 0.5
+setColorAlpha 0.25
 if %TEAM > 1 // if not #TEAM_PLAYER or #TEAM_SPECTATOR
 	setColorToTeamColor %TEAM
 	setColorAlpha 0.25
+endif
+if %TEAM == #TEAM_SPECTATOR
+	setColorAlpha 0.75
 endif
 drawPicByName "gfx/hud/default/top_bar"
 
