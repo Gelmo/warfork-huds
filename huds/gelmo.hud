@@ -12,7 +12,7 @@ Credz:
  - adem
 */
 
-setFontFamily con_fontSystem
+setFontFamily "Noto Sans"
 setFontSize con_fontSystemSmall
 
 setScale #DEFAULTSCALE

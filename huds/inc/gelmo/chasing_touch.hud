@@ -24,7 +24,7 @@ drawSubPicByName "gfx/hud/arrow", 0, 0, 1, 1
 touchJump
 
 moveCursor 40 * 1.333 * %VIDHEIGHT / %VIDWIDTH, -6
-setFontFamily con_fontSystem
+setFontFamily "Noto Sans"
 setFontSize %VIDHEIGHT / 25
 
 setColor 1 1 1 1

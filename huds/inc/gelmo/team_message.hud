@@ -7,7 +7,7 @@
 	setColor 1 1 1 1
 	setCursor #WIDTH / 2, 380
 	setAlign 2 1
-	setFontFamily con_fontSystem
+	setFontFamily "Noto Sans"
 	setFontSize con_fontSystemSmall
 	drawStatString %MESSAGE_SELF
 endif*/
@@ -17,7 +17,7 @@ endif*/
 	setColor 1 1 1 1
 	setCursor #WIDTH / 2, #HEIGHT / 2
 	setAlign 2 1
-	setFontFamily con_fontSystem
+	setFontFamily "Noto Sans"
 	setFontSize con_fontSystemSmall
 	drawStatString %MESSAGE_OTHER
 endif*/

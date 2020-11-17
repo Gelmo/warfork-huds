@@ -1,4 +1,4 @@
-setFontFamily con_fontSystem
+setFontFamily "Noto Sans"
 if %SOFTKEYBOARD
 	setFontSize %VIDHEIGHT / 35
 endif

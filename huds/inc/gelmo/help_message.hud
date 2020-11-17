@@ -1,7 +1,7 @@
 // match message
 ifnot %CHAT_MODE && %SOFTKEYBOARD
 
-setFontFamily con_fontSystem
+setFontFamily "Noto Sans"
 setFontSize con_fontSystemSmall
 setAlign #CENTER #TOP
 setCursor #WIDTH / 2, #HEIGHT * 0.15

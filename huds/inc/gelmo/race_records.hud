@@ -1,7 +1,7 @@
 if %RACE
     setCursor 250, 470
     setAlign #CENTER, #MIDDLE
-    setFontFamily con_fontSystem
+    setFontFamily "Noto Sans"
 	setFontSize %VIDHEIGHT / 50
 
     if %TIME_SELF == #NOTSET
