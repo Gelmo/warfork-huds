@@ -3,7 +3,7 @@
 //
 drawTeamMates
 
-setFontFamily "Droid Sans"
+setFontFamily "Noto Sans"
 setFontStyle Bold
 setFontSize %VIDHEIGHT / 48
 

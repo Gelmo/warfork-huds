@@ -61,6 +61,7 @@ include gelmo/picked_up_item
 include keystate
 include gelmo/race_records
 include weaponcross
+
 endif //if %MATCH_STATE < #MATCH_STATE_POSTMATCH
 
 include awards

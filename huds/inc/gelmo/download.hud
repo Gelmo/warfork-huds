@@ -10,7 +10,7 @@ if %DOWNLOAD_IN_PROGRESS
 	drawPicBar %DOWNLOAD_PERCENT, 100, "gfx/2d/progressbar"
 
 	setColor 1 1 1 1
-	setFontFamily "Droid Sans"
+	setFontFamily "Noto Sans"
 	setFontSize %VIDHEIGHT / 50
 	moveCursor 4, 15
 

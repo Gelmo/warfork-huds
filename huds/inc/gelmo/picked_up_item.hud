@@ -1,7 +1,7 @@
 if %SCOREBOARD == 0 //don't show if scoreboard is shown
 if %SHOW_PICKUP
 if %PICKUP_ITEM	
-	setFontFamily "Droid Sans"
+	setFontFamily "Noto Sans"
 	setFontStyle "Bold"
 	setFontSize %VIDHEIGHT / 45
 	setCursor -22 + #WIDTH / 2, 475
