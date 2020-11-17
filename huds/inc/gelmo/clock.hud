@@ -61,10 +61,12 @@ drawClock
 moveCursor +0.5, +0.5
 
 // MATCH STATES
-setFontFamily "Noto Sans"
+setFontFamily "Orbitron"
+setFontStyle Bold
 setFontSize %VIDHEIGHT / 48
 setAlign 2 1
 setCursor #WIDTH / 2, 40
+moveCursor 0 2
 setColor 0.4 1 0.4 0.5
 if %MATCH_STATE == #MATCH_STATE_WARMUP
 	drawString "Warmup"
@@ -72,3 +74,4 @@ endif
 if %OVERTIME
 	drawString "Overtime"
 endif
+setFontStyle Normal
