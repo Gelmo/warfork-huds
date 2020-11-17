@@ -10,6 +10,7 @@ Credz:
  - SiPlus for the touchscreen version
  - nasa
  - adem
+ - ETR
 */
 
 setFontFamily "Noto Sans"
