@@ -17,10 +17,10 @@ setFontSize con_fontSystemSmall
 
 setScale #DEFAULTSCALE
 if %MATCH_STATE < #MATCH_STATE_POSTMATCH
-include zoom
-include damage_indicator_screen
-include crosshair
-include damage_numbers
+include gelmo/zoom
+include gelmo/damage_indicator_screen
+include gelmo/crosshair
+include gelmo/damage_numbers
 
 if %TUTORIAL == 0
 include gelmo/clock
@@ -43,13 +43,13 @@ include gelmo/team_info
 include gelmo/team_image
 include gelmo/team_message
 include gelmo/team_progress
-include minimap
+include gelmo/minimap
 include gelmo/item_timers
 
 endif //if %TUTORIAL == 0
 endif //if %RACE == 0
 
-include strafe
+include gelmo/strafe
 include gelmo/chasing
 include gelmo/pointing
 include gelmo/download
@@ -58,14 +58,14 @@ include gelmo/speed
 include gelmo/fps
 include gelmo/help_message
 include gelmo/picked_up_item
-include keystate
+include gelmo/keystate
 include gelmo/race_records
-include weaponcross
+include gelmo/weaponcross
 
 endif //if %MATCH_STATE < #MATCH_STATE_POSTMATCH
 
-include awards
-include chat
+include gelmo/awards
+include gelmo/chat
 
 //adds transparent dark background if scoreboard is shown
 if %SCOREBOARD == 1
