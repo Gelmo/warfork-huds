@@ -58,7 +58,7 @@ drawClock
 moveCursor +0.5, +0.5
 
 // MATCH STATES
-setFontFamily con_fontSystem
+setFontFamily "Droid Sans"
 setFontSize %VIDHEIGHT / 48
 setAlign 2 1
 setCursor #WIDTH / 2, 40
