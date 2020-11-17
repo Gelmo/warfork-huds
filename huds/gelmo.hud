@@ -37,7 +37,7 @@ include gelmo/scores_individual
 
 endif //if %TUTORIAL == 0
 
-include ammo_warning
+include gelmo/ammo_warning
 include gelmo/stunned
 include gelmo/obituaries
 include gelmo/powerups
