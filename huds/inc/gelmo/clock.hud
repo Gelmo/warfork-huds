@@ -15,9 +15,9 @@ endif
 drawPicByName "gfx/hud/default/top_bar"
 
 //clock numbers
-moveCursor 0 0
-setFontFamily "Virtue"
-setFontSize %VIDHEIGHT / 18
+moveCursor 0 -1
+setFontFamily "Goldman"
+setFontSize %VIDHEIGHT / 16
 
 //pro outline
 setColor 0 0 0 1

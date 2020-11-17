@@ -5,6 +5,6 @@ if %MATCH_STATE != #MATCH_STATE_WARMUP
 	moveCursor 0, -16
 	setHeight 52
 endif
-setFontFamily "Virtue"
+setFontFamily "Goldman"
 setFontSize %VIDHEIGHT / 50
 drawObituaries #CENTER 16

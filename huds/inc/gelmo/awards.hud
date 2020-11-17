@@ -1,5 +1,5 @@
 if %SCOREBOARD == 0
-	setFontFamily "Hemi Head"
+	setFontFamily "Goldman"
 	setFontSize %VIDHEIGHT / 30
 	setColor 1, 1, 1, 1
 	setCursor 400 90
