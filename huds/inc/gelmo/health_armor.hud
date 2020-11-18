@@ -96,4 +96,3 @@ if %ARMOR > 0
 endif //if %ARMOR > 0
 
 endif //if %INSTAGIB == 0
-endif //if %TEAM != #TEAM_SPECTATOR
