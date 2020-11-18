@@ -7,7 +7,13 @@ if %TEAMBASED == 0 //not team based GT
 
 	setColor 0 0 0 1
 	drawString "Points:"
-	moveCursor -1 -1
+	moveCursor 0, -1
+	drawString "Points:"
+	moveCursor 1, 0
+	drawString "Points:"
+	moveCursor 0, 1
+	drawString "Points:"
+	moveCursor -0.5, -0.5
 
 	setColor 1 1 1 1
 	drawString "Points:"
