@@ -2,25 +2,23 @@
 // MESSAGE
 //
 
-// what does this do
-/*if %MESSAGE_SELF
+if %MESSAGE_SELF
 	setColor 1 1 1 1
 	setCursor #WIDTH / 2, 380
 	setAlign 2 1
 	setFontFamily "Noto Sans"
 	setFontSize con_fontSystemSmall
 	drawStatString %MESSAGE_SELF
-endif*/
+endif
 
-// what does this do
-/*if %MESSAGE_OTHER
+if %MESSAGE_OTHER
 	setColor 1 1 1 1
 	setCursor #WIDTH / 2, #HEIGHT / 2
 	setAlign 2 1
 	setFontFamily "Noto Sans"
 	setFontSize con_fontSystemSmall
 	drawStatString %MESSAGE_OTHER
-endif*/
+endif
 
 //
 // Draw CA players remaining icons
@@ -52,6 +50,12 @@ if %MESSAGE_ALPHA
 		if %IMAGE_SELF
 			moveCursor 24 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
 		endif
+		setColorToTeamColor #TEAM_ALPHA
+		setCursor 400 - 80, 30
+		setAlign #RIGHT, #TOP
+		setFontFamily "Orbitron"
+		setFontSize con_fontSystemSmall
+		drawStatString %MESSAGE_ALPHA
 	endif
 
 	if %TEAM == #TEAM_BETA
@@ -77,6 +81,12 @@ if %MESSAGE_ALPHA
 		if %IMAGE_BETA
 			moveCursor -24 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
 		endif
+		setColorToTeamColor #TEAM_ALPHA
+		setCursor 400 + 80, 30
+		setAlign #LEFT, #TOP
+		setFontFamily "Orbitron"
+		setFontSize con_fontSystemSmall
+		drawStatString %MESSAGE_ALPHA
 	endif
 endif
 
@@ -105,6 +115,12 @@ if %MESSAGE_BETA
 		if %IMAGE_SELF
 			moveCursor 24 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
 		endif
+		setColorToTeamColor #TEAM_BETA
+		setCursor 400 - 80, 30
+		setAlign #RIGHT, #TOP
+		setFontFamily "Orbitron"
+		setFontSize con_fontSystemSmall
+		drawStatString %MESSAGE_BETA
 	endif
 
 	if %TEAM == #TEAM_ALPHA
@@ -130,5 +146,11 @@ if %MESSAGE_BETA
 		if %IMAGE_BETA
 			moveCursor -24 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
 		endif
+		setColorToTeamColor #TEAM_BETA
+		setCursor 400 + 80, 30
+		setAlign #LEFT, #TOP
+		setFontFamily "Orbitron"
+		setFontSize con_fontSystemSmall
+		drawStatString %MESSAGE_BETA
 	endif
 endif
