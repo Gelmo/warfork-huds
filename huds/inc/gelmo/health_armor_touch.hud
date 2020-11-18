@@ -29,7 +29,7 @@ if %HEALTH != #NOTSET
 	if %TOUCH_FLIP < 0
 		moveCursor -29 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
 	endif
-	include default/health_armor_icon_health
+	include gelmo/health_armor_icon_health
 
 	if %TOUCH_FLIP > 0
 		moveCursor -223 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
@@ -85,7 +85,7 @@ if %TEAM != #TEAM_SPECTATOR
 		if %TOUCH_FLIP < 0
 			moveCursor -29 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
 		endif
-		include default/health_armor_icon_armor
+		include gelmo/health_armor_icon_armor
 
 		if %TOUCH_FLIP > 0
 			moveCursor -223 * 1.333 * %VIDHEIGHT / %VIDWIDTH, 0
